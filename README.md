@@ -1,27 +1,28 @@
 ```
- █████╗ ██╗   ██╗████████╗ ██████╗     ███╗   ███╗███████╗ ██████╗ 
-██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗    ████╗ ████║╚══███╔╝██╔════╝ 
-███████║██║   ██║   ██║   ██║   ██║    ██╔████╔██║  ███╔╝ ██║  ███╗
-██╔══██║██║   ██║   ██║   ██║   ██║    ██║╚██╔╝██║ ███╔╝  ██║   ██║
-██║  ██║╚██████╔╝   ██║   ╚██████╔╝    ██║ ╚═╝ ██║███████╗╚██████╔╝
-╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝     ╚═╝     ╚═╝╚══════╝ ╚═════╝ 
+ █████╗ ██╗   ██╗████████╗ ██████╗      ██████╗ ███████╗██████╗ 
+██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗    ██╔════╝ ██╔════╝██╔══██╗
+███████║██║   ██║   ██║   ██║   ██║    ██║  ███╗███████╗██║  ██║
+██╔══██║██║   ██║   ██║   ██║   ██║    ██║   ██║╚════██║██║  ██║
+██║  ██║╚██████╔╝   ██║   ╚██████╔╝    ╚██████╔╝███████║██████╔╝
+╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝      ╚═════╝ ╚══════╝╚═════╝
    ```                                                                
 
 
 
-<b>AUTO MZG</b> é um script interativo e automatizado que instala o <i>Mysql Server</i> + <i>Zabbix Server</i> + <i>Grafana</i> em sistemas Ubuntu de forma rápida, eficiente e visualmente amigável no terminal.
+<b>AUTO GSD</b> é um script de instalação automatizada que configura <i>MySQL Server</i>, <i>Zabbix Server</i> e <i>Grafana</i> em sistemas Ubuntu, com interface colorida e execução em tempo real no terminal.
 
-Desenvolvido para profissionais de infraestrutura, DevOps, analistas NOC e entusiastas de monitoramento que desejam agilizar a montagem de laboratórios ou ambientes de produção com uma interface clara e colorida.
+Indicado para profissionais de infraestrutura, DevOps e analistas de NOC que precisam montar ambientes de monitoramento — em laboratório ou produção — de forma rápida e confiável.
 <br/><br/><br/>
+
 📂 <b>Como Utilizar</b>
 ```bash
-git clone https://github.com/sdias-guilherme/zabiix-grafana
-cd automzg
+git clone https://github.com/sdias-guilherme/zabiix-grafana.git
+cd zabiix-grafana
 chmod +x automzg.sh
 sudo ./automzg.sh
 ```
 <br/><br/>
-🔧 <b>Requisitos</b>
+🔧 <b>Pré-requisitos</b>
 
 → Ubuntu 22.04 ou superior.<br/>
 → Permissões de root (sudo).<br/>
@@ -29,17 +30,17 @@ sudo ./automzg.sh
 <br/><br/><br/>
 ✅ <b>Recursos do Script</b>
 
-→ Detecção de erros e ocultação de mensagens desnecessárias.<br/>
-→ Configuração automática do repositório Zabbix.<br/>
-→ Instalação de pacotes Zabbix Server, Frontend e Agent.<br/>
+→  Detecção de erros e supressão de mensagens desnecessárias.<br/>
+→ Configuração automática do repositório Zabbix<br/>
+→ Instalação dos pacotes Zabbix Server, Frontend e Agent.<br/>
 → Instalação do MySQL Server.<br/>
 → Instalação do Grafana.<br/>
-→ Criação do banco de dados Zabbix com permissões.<br/>
+→ Criação do banco de dados Zabbix com permissões necessárias.<br/>
 → Configuração do arquivo zabbix_server.conf.<br/>
-→ Configuração de locale para pt_BR.UTF-8<br/>
-→ Ativação dos serviços.<br/>
-→ Exibição colorida e em tempo real com status de sucesso ou falha.<br/>
-→ Tudo instalado com apenas 1 script e sem setup.
+→ Configuração de locale para pt_PT.UTF-8<br/>
+→ Ativação utomática dos serviços.<br/>
+→ Exibição em tempo real com status de sucesso ou falha.<br/>
+→ Instalação completa com um único script, sem configuração manual.
 <br/><br/><br/>
 🤝 <b>Contribuições</b>
 
@@ -48,3 +49,7 @@ sudo ./automzg.sh
 <br/><br/>
 🧑‍💻 Profissionais apaixonados por automação, monitoramento e infraestrutura inteligente.<br/><br/>
 🪲 Desenvolvido por <b>BUG IT</b>
+
+<b>Créditos</b>
+
+Este projeto é baseado no [AutoMZG](https://github.com/bug-it/AutoMZG), desenvolvido por BUG IT, com adaptações para locale pt-PT, fuso horário de Lisboa e outras melhorias<br/>
